@@ -11,6 +11,7 @@ describe('RemindersService', () => {
   });
 // Test to check if the service is created successfully
   it('should be created', () => {
+    //check if it exists
     expect(service).toBeTruthy();
   });
 });
