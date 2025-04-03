@@ -10,7 +10,7 @@ describe('WeatherService', () => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(WeatherService);
   });
-
+//  checks whether the WeatherService is successfully created.
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
