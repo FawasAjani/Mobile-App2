@@ -9,6 +9,7 @@ import { RemindersListPage } from './reminders-list.page';
   imports: [
  // Include CommonModul
     CommonModule,
+    // Include FormsModule to handle form functionalities
     FormsModule,
     IonicModule,
     RemindersListPageRoutingModule,
