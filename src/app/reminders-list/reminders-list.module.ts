@@ -11,7 +11,7 @@ import { RemindersListPage } from './reminders-list.page';
     CommonModule,
     // Include FormsModule to handle form functionalities
     FormsModule,
-    IonicModule,
+    IonicModule,// Include IonicModule
     RemindersListPageRoutingModule,
     RemindersListPage // Add RemindersListPage here
   ],
