@@ -30,6 +30,7 @@ export class RemindersListPage {
     // Ensure storage is ready
     this.storage.create()
       .then(() => {
+         // Retrieve stored reminders
         this.storage.get('reminders')
           .then((data) => {
             this.reminders = data;
