@@ -19,6 +19,7 @@ export class WeatherService {
 
   options = {
     timeout: 10000,
+    // Request the device to provide the most accurate location
     enableHighAccuracy: true,
     maximumAge: 3600
   };
