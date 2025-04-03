@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -12,8 +13,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    ScrollingModule,
+    HomePage, // Moved HomePage here
   ],
-  declarations: [HomePage]
+  declarations: [] // Removed HomePage from here
 })
-export class HomePageModule {}
+export class HomePageModule { }
