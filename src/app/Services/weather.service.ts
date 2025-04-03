@@ -26,6 +26,7 @@ export class WeatherService {
 
   
   GetCurrentCoordinates(): any {
+     // Use the geolocation API to get the current position of the device
     this.geolocation.getCurrentPosition().then((resp) => {
       this.latitude = resp.coords.latitude;
       this.longitude = resp.coords.longitude;
