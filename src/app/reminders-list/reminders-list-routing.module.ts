@@ -6,7 +6,7 @@ import { RemindersListPage } from './reminders-list.page';
 const routes: Routes = [
   {
     path: '',// This specifies the empty path
-    component: RemindersListPage
+    component: RemindersListPage// The component to display when the route is matched 
   }
 ];
 
