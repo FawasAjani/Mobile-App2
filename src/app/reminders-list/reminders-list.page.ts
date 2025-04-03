@@ -20,7 +20,7 @@ export class RemindersListPage {
 
   //initialize Variables
   constructor(private storage: Storage, public alertController: AlertController, private toastController: ToastController) { }
-
+// Array to store reminders, each containing a title, content, and index
   reminders: { title: string, content: string, index: number }[] = [];
 
   reminderCount: number = 0;
