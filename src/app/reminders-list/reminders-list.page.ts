@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 // Handles local storage in Ionic
 import { Storage } from '@ionic/storage-angular';
+// Used for displaying alerts
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 
