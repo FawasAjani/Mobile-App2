@@ -5,7 +5,7 @@ import { RemindersListPage } from './reminders-list.page';
 // Define the routes for this module
 const routes: Routes = [
   {
-    path: '',
+    path: '',// This specifies the empty path
     component: RemindersListPage
   }
 ];
