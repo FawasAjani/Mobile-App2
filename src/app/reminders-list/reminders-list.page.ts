@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
 // Used for displaying alerts
 import { AlertController } from '@ionic/angular';
+// Used for displaying toasts (small notifications)
 import { ToastController } from '@ionic/angular';
-
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
