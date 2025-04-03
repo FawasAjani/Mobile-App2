@@ -32,6 +32,7 @@ export class WeatherService {
       console.log(this.latitude, this.longitude);
       this.GetWeatherData(this.latitude, this.longitude);
     }).catch((error) => {
+      // Handle any errors that occur while retrieving the geolocation
       console.log('Error getting location', error);
     });
   }
