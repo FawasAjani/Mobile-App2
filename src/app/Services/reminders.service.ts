@@ -12,7 +12,7 @@ export class RemindersService {
   //injects the Ionic Storage service into the service
   constructor(private storage: Storage) { }
 
-  //Saves reminders and push to storage
+   //Method to save a reminder and push it into the reminders array
   saveReminder(reminders: { title: string, content: string, index: number }) {
     this.reminder.push(reminders);
 
