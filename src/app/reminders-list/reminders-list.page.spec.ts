@@ -11,6 +11,7 @@ describe('RemindersListPage', () => {
     TestBed.configureTestingModule({
        // Declare the component being tested
       declarations: [ RemindersListPage ],
+       // Import IonicModule to support Ionic components in the test
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
