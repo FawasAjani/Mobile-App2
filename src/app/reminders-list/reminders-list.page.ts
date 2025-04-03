@@ -81,7 +81,7 @@ export class RemindersListPage {
           }
         ]
       });
-      await alert.present();
+      await alert.present();// Show the alert to the user
 
     } else {
       const toast = await this.toastController.create({
