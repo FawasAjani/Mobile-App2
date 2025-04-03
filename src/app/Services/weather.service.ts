@@ -2,6 +2,7 @@
 
 
 import { Injectable } from '@angular/core';
+// It's used in this service to fetch weather data from OpenWeather API.
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
