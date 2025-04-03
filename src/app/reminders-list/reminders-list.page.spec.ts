@@ -9,6 +9,7 @@ describe('RemindersListPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
+       // Declare the component being tested
       declarations: [ RemindersListPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
