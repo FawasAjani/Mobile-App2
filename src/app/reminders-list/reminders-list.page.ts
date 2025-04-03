@@ -27,6 +27,7 @@ export class RemindersListPage {
   reminderNumber: number = 0;
 //Runs  when the page is active
   ionViewWillEnter() {
+    // Ensure storage is ready
     this.storage.create()
       .then(() => {
         this.storage.get('reminders')
