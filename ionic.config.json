@@ -1,0 +1,7 @@
+{
+  "name": "NewBrezzyNotes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
