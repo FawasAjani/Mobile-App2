@@ -53,9 +53,10 @@ export class RemindersListPage {
       const alert = await this.alertController.create({
         cssClass: 'my-custom-class',
         header: 'Are you sure you want to delete your reminder',
-        message: 'You will lose your note forever!!!',
+        message: 'This action is irreversible. Are you sure you want to permanently delete this reminder?',// Warning message
         buttons: [
           {
+            // Option to cancel deletion
             text: 'No',
             role: 'cancel',
             cssClass: 'secondary',
