@@ -15,4 +15,5 @@ import { RemindersListPage } from './reminders-list.page';
   ],
   declarations: [] // Remove RemindersListPage from here
 })
+ // Define the module for RemindersListPage
 export class RemindersListPageModule {}
