@@ -5,6 +5,7 @@ import { RemindersService } from './reminders.service';
 describe('RemindersService', () => {
   let service: RemindersService;
 
+  // Before each test, set up the testing environment
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(RemindersService);
