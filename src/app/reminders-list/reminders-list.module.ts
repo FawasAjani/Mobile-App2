@@ -7,6 +7,7 @@ import { RemindersListPage } from './reminders-list.page';
 
 @NgModule({
   imports: [
+ // Include CommonModul
     CommonModule,
     FormsModule,
     IonicModule,
