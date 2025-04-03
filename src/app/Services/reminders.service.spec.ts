@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
+// Testing the ReminderService
 import { RemindersService } from './reminders.service';
 
 describe('RemindersService', () => {
