@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+// Handles local storage in Ionic
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
-import { IonHeader } from "@ionic/angular/standalone";
+
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
