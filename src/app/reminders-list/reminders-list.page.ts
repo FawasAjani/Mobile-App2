@@ -18,14 +18,14 @@ import { RouterModule } from '@angular/router';
 })
 export class RemindersListPage {
 
-  //initialize Variables
+  //Injects storage, alert, and toast controllers
   constructor(private storage: Storage, public alertController: AlertController, private toastController: ToastController) { }
 // Array to store reminders, each containing a title, content, and index
   reminders: { title: string, content: string, index: number }[] = [];
   // Variables for reminder count and selected reminder number
   reminderCount: number = 0;
   reminderNumber: number = 0;
-
+//Runs  when the page is active
   ionViewWillEnter() {
     this.storage.create()
       .then(() => {
