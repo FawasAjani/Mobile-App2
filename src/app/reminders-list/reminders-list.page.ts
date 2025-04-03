@@ -49,7 +49,7 @@ export class RemindersListPage {
     this.reminderCount = Object.keys(this.reminders).length;
 
     if (this.reminderNumber < this.reminderCount && this.reminderCount > -1) {
-
+// Create an alert dialog to confirm reminder deletion
       const alert = await this.alertController.create({
         cssClass: 'my-custom-class',
         header: 'Are you sure you want to delete your reminder',
