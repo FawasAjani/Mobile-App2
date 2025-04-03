@@ -13,6 +13,7 @@ describe('WeatherService', () => {
   });
 //  checks whether the WeatherService is successfully created.
   it('should be created', () => {
+   //Truty means that it should be created successfully.
     expect(service).toBeTruthy();
   });
 });
