@@ -14,6 +14,7 @@ export class RemindersService {
 
    //Method to save a reminder and push it into the reminders array
   saveReminder(reminders: { title: string, content: string, index: number }) {
+      // Push 
     this.reminder.push(reminders);
 
     this.storage.create()
