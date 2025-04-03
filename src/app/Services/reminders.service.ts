@@ -7,7 +7,7 @@ import { Storage } from '@ionic/storage-angular';
 })
 export class RemindersService {
 
-  //reminder are stored in an object array
+  // Declaring a private array to store reminders.
   private reminder: { title: string, content: string, index: number }[] = [];
 
   constructor(private storage: Storage) { }
