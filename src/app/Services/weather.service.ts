@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 // It's used in this service to fetch weather data from OpenWeather API.
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+// Geolocation is a Cordova plugin that provides access to the device's GPS
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 
 @Injectable({
