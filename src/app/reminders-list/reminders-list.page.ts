@@ -22,7 +22,7 @@ export class RemindersListPage {
   constructor(private storage: Storage, public alertController: AlertController, private toastController: ToastController) { }
 // Array to store reminders, each containing a title, content, and index
   reminders: { title: string, content: string, index: number }[] = [];
-
+  // Variables for reminder count and selected reminder number
   reminderCount: number = 0;
   reminderNumber: number = 0;
 
