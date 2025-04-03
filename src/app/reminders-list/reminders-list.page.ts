@@ -87,7 +87,7 @@ export class RemindersListPage {
       const toast = await this.toastController.create({
         color: 'dark',
         message: 'Please enter a valid reminder Number.',
-        duration: 2000
+        duration: 2000// Duration in milliseconds
       });
       toast.present();
     }
