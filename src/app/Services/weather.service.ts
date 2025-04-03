@@ -13,7 +13,7 @@ export class WeatherService {
 
   latitude: any = 53.350140; //latitude
   longitude: any = -6.266155; //longitude
-
+  //  HttpClient and Geolocation services
   constructor(private httpClient: HttpClient, private geolocation: Geolocation) { }
 
 
