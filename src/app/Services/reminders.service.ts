@@ -9,7 +9,7 @@ export class RemindersService {
 
   // Declaring a private array to store reminders.
   private reminder: { title: string, content: string, index: number }[] = [];
-
+  //injects the Ionic Storage service into the service
   constructor(private storage: Storage) { }
 
   //Saves reminders and push to storage
