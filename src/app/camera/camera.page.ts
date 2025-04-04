@@ -11,7 +11,7 @@ import { IonicModule } from '@ionic/angular';
 })
 export class CameraPage {
   constructor(private camera: Camera, private storage: Storage) { }
-
+  // Camera options configuration
   options: CameraOptions = {
     quality: 100,
     destinationType: this.camera.DestinationType.DATA_URL,
