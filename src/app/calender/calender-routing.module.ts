@@ -13,6 +13,6 @@ const routes: Routes = [
 //Defined child routes
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule], // Export RouterModule
 })
 export class CalenderPageRoutingModule {}
