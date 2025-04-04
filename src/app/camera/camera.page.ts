@@ -19,7 +19,7 @@ export class CameraPage {
     mediaType: this.camera.MediaType.PICTURE,
   };
 
-  
+    // Function to capture a picture using the camera
   takePicture() {
     this.camera.getPicture(this.options).then(
       (imageData) => {
