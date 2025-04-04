@@ -10,7 +10,7 @@ const routes: Routes = [
     component: CalenderPage
   }
 ];
-
+//Defined child routes
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
