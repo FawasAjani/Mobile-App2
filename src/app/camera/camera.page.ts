@@ -26,7 +26,7 @@ export class CameraPage {
         this.storage.create()
           .then(() => {
             this.storage.set("photos", imageData);
-            console.log("photo");
+            console.log("photo");// Log a message to the console
           })
           .catch();
       },
