@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
+// Import routing module for CalenderPage
 import { CalenderPageRoutingModule } from './calender-routing.module';
 
 
@@ -16,4 +16,4 @@ import { CalenderPageRoutingModule } from './calender-routing.module';
   ],
   declarations: [] // Remove CalenderPage from here
 })
-export class CalenderPageModule {}
+export class CalenderPageModule {}// Defines and exports the module for CalenderPage
