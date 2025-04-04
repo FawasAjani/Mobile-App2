@@ -5,12 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CalenderPageRoutingModule } from './calender-routing.module';
-import { CalenderPage } from './calender.page';
+
 
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
+    CommonModule, // Provides common directives and pipes
+    FormsModule,// Enables form functionalities
     IonicModule,
     CalenderPageRoutingModule
   ],
