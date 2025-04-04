@@ -12,7 +12,7 @@ import { CalenderPageRoutingModule } from './calender-routing.module';
     CommonModule, // Provides common directives and pipes
     FormsModule,// Enables form functionalities
     IonicModule,// Provides Ionic UI components
-    CalenderPageRoutingModule
+    CalenderPageRoutingModule//Handles routing for this module
   ],
   declarations: [] // Remove CalenderPage from here
 })
