@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 import { Storage } from '@ionic/storage-angular';
-import { IonHeader } from "@ionic/angular/standalone";
+
 import { IonicModule } from '@ionic/angular';
 @Component({
   selector: 'app-camera',
@@ -19,10 +19,7 @@ export class CameraPage {
     mediaType: this.camera.MediaType.PICTURE,
   };
 
-  //Native: tried calling Camera.getPicture, but Cordova is not available. Make sure to include cordova.js or run in a device/simulator
-  //Having issue - Camera issue: cordova_not_available
-
-  // I tried reinstalling cordova and trying the app using ionic dashboard did not seem to work
+  
   takePicture() {
     this.camera.getPicture(this.options).then(
       (imageData) => {
@@ -40,5 +37,7 @@ export class CameraPage {
     );
   }
 }
-
-
+/*
+  Note:
+  To use the camera functionality, you must run this code on an Android simulator or a real Android device.
+*/

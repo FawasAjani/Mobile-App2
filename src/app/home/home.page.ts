@@ -4,7 +4,6 @@ import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { NavController } from '@ionic/angular';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
-import { IonApp } from "@ionic/angular/standalone";
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { DatePipe, DecimalPipe } from '@angular/common';
