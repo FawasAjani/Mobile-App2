@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { DatePipe, DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -17,9 +18,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HomePage {
 
-  //Initialize variables
-
-  //Initialized  weatherMain object as i was having a displaying output issue
+  // Initialize variables
   weatherMain = {
     "temp": 0,
     "feels_like": 0,
@@ -34,29 +33,31 @@ export class HomePage {
   weatherData: any[] = [];
   weatherName: any[] = [];
 
-  latitude: number = 53.350140; //latitude
-  longitude: number = -6.266155; //longitude
+  latitude: number = 53.350140;
+  longitude: number = -6.266155;
 
   notes: { title: string, content: string, index: number }[] = [];
   reminders: { title: string, content: string, index: number }[] = [];
 
-  //Counting how many notes
   noteCount: number = 0;
   reminderCount: number = 0;
 
-  //Setting notes as default
   segment: string = "notes";
 
-  constructor(public navCtrl: NavController, private weatherService: WeatherService, private geolocation: Geolocation, private storage: Storage, public alertController: AlertController) { }
+  constructor(
+    public navCtrl: NavController,
+    private weatherService: WeatherService,
+    private geolocation: Geolocation,
+    private storage: Storage,
+    public alertController: AlertController
+  ) { }
 
-  //GPS Options
   options = {
     timeout: 10000,
     enableHighAccuracy: true,
     maximumAge: 3600
   };
 
-  /*Get weather to reload*/
   GetCurrentCoordinates() {
     this.geolocation.getCurrentPosition().then((resp) => {
       this.latitude = resp.coords.latitude;
@@ -78,12 +79,9 @@ export class HomePage {
         console.log(this.weatherName);
       }
     );
-
   }
 
-  /*Get weather on start up*/
   ngOnInit() {
-
     this.noteCount = Object.keys(this.notes).length;
     this.reminderCount = Object.keys(this.reminders).length;
 
@@ -99,39 +97,34 @@ export class HomePage {
         console.log(this.weatherName);
       }
     );
-
-  }//End Of Ngoninit
-
-  //Gets all data from storage
-  ionViewWillEnter() {
-
-    this.storage.create()
-      .then(() => {
-        this.storage.get('notes')
-          .then((data) => {
-            this.notes = data;
-          })
-          .catch();
-      })
-      .catch();
-
-    this.storage.create()
-      .then(() => {
-        this.storage.get('reminders')
-          .then((data) => {
-            this.reminders = data;
-          })
-          .catch();
-      })
-      .catch();
-
-    //Gets count of how many notes there is
-    this.noteCount = Object.keys(this.notes).length;
-    this.reminderCount = Object.keys(this.reminders).length;
-
   }
 
-  //Reset app function with confirm menu
+  ionViewWillEnter() {
+    this.storage.create().then(() => {
+
+      this.storage.get('notes').then((data) => {
+        this.notes = data ?? [];
+        this.noteCount = Object.keys(this.notes).length;
+      }).catch((error) => {
+        console.error("Error getting notes:", error);
+        this.notes = [];
+        this.noteCount = 0;
+      });
+
+      this.storage.get('reminders').then((data) => {
+        this.reminders = data ?? [];
+        this.reminderCount = Object.keys(this.reminders).length;
+      }).catch((error) => {
+        console.error("Error getting reminders:", error);
+        this.reminders = [];
+        this.reminderCount = 0;
+      });
+
+    }).catch((error) => {
+      console.error("Error creating storage:", error);
+    });
+  }
+
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
@@ -143,15 +136,15 @@ export class HomePage {
           role: 'cancel',
           cssClass: 'secondary',
           id: 'cancel-button',
-          handler: (blah) => {
-            console.log('Confirm Cancelled Do nothing');
+          handler: () => {
+            console.log('Confirm Cancelled - Do nothing');
           }
-        }, {
+        },
+        {
           text: 'Yes',
           id: 'confirm-button',
           handler: () => {
             console.log('Confirm Okay');
-            //Reset app and reloads app
             this.storage.clear();
             window.location.reload();
           }
@@ -161,7 +154,5 @@ export class HomePage {
     await alert.present();
   }
 
-  //Gets current date
   today: number = Date.now();
-
 }
