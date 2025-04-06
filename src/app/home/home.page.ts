@@ -34,7 +34,7 @@ export class HomePage {
   weatherName: any[] = [];
 
   latitude: number = 53.350140;//latitude
-  longitude: number = -6.266155;
+  longitude: number = -6.266155;//longitude
 
   notes: { title: string, content: string, index: number }[] = [];
   reminders: { title: string, content: string, index: number }[] = [];
