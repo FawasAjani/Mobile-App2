@@ -124,7 +124,9 @@ export class HomePage {
       console.error("Error creating storage:", error);
     });
   }
-
+/*
+ * Displays a confirmation alert before resetting the app data.
+ */
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
