@@ -33,7 +33,7 @@ export class HomePage {
   weatherData: any[] = [];
   weatherName: any[] = [];
 
-  latitude: number = 53.350140;
+  latitude: number = 53.350140;//latitude
   longitude: number = -6.266155;
 
   notes: { title: string, content: string, index: number }[] = [];
