@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { WeatherService } from '../Services/weather.service';
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
@@ -30,7 +31,7 @@ export class HomePage {
     "grnd_level": 0
   };
 
-  weatherData: any[] = [];
+  weatherData: any[] = [];//Weather Array
   weatherName: any[] = [];
 
   latitude: number = 53.626;//latitude-Dublin
