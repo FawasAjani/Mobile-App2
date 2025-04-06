@@ -127,6 +127,7 @@ export class HomePage {
 /*
  * Displays a confirmation alert before resetting the app data.
  */
+/* * If the user confirms, all stored data (notes, reminders, etc.) will be permanently deleted*/
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
