@@ -33,8 +33,8 @@ export class HomePage {
   weatherData: any[] = [];
   weatherName: any[] = [];
 
-  latitude: number = 53.350140;//latitude
-  longitude: number = -6.266155;//longitude
+  latitude: number = 53.626;//latitude-Dublin
+  longitude: number = -6.266155;//longitude-Dublin
 
   notes: { title: string, content: string, index: number }[] = [];
   reminders: { title: string, content: string, index: number }[] = [];
