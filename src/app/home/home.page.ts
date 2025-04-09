@@ -34,8 +34,8 @@ export class HomePage {
   weatherData: any[] = [];//Weather Array
   weatherName: any[] = [];
 
-  latitude: number = 53.626;//latitude-Dublin
-  longitude: number = -6.266155;//longitude-Dublin
+  latitude: number =53.7590;//latitude-Roscommon
+  longitude: number = -8.1990;
 
   notes: { title: string, content: string, index: number }[] = [];
   reminders: { title: string, content: string, index: number }[] = [];

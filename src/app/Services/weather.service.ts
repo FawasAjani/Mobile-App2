@@ -13,8 +13,8 @@ import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 })
 export class WeatherService {
 
-  latitude: any =  53.626;  //latitude
-  longitude: any = -8.188 //longitude
+  latitude: any =  53.2828;  //latitude-Roscommon
+  longitude: any = -9.04489; //longitude
   //  HttpClient and Geolocation services
   constructor(private httpClient: HttpClient, private geolocation: Geolocation) { }
 
