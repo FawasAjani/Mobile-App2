@@ -43,7 +43,7 @@ export class WeatherService {
   // Method to fetch weather data from the OpenWeather API using the latitude and longitude
   GetWeatherData(latitude: number, longitude: number): Observable<any> {
     console.log(this.latitude, this.longitude);
-    console.log('https://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&units=metric&appid=18c63d63d9d7c4d0335b9c5a99c20482');
+    console.log('https://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&units=18c63d63d9d7c4d0335b9c5a99c20482');
     // Make a GET request to the OpenWeather API to get the weather data
     return this.httpClient.get('https://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&units=metric&appid=18c63d63d9d7c4d0335b9c5a99c20482');
   }

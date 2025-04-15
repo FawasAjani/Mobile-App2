@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Camera } from '@awesome-cordova-plugins/camera/ngx';
+
 //All imports are put here
 
 @NgModule({
